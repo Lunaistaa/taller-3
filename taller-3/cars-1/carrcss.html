@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registro de Autos</title>
+	<style>
+	
+	.btn-registro {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			margin-top: 0;
+		}
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+		table {
+			border-collapse: collapse;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 800px;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+		th, td {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: left;
+		}
+		select, input[type="text"], textarea {
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 1.2em;
+			margin-top: 10px;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section>
+			<form action="" method="post">
+				<table>
+					<tr>
+						<th colspan="2"><h1>Registro de Autos</h1></th>
+					</tr>
+					<tr>
+						<th><label for="id_coche">ID Coche:</label></th>
+						<td><input type="text" id="id_coche" name="id_coche"></td>
+					</tr>
+					<tr>
+						<th><label for="id_movidoa">ID Movido a:</label></th>
+						<td>
+							<select id="id_movidoa" name="id_movidoa">
+								<option value="1">Gasolina</option>
+								<option value="2">Diésel</option>
+								<option value="3">Eléctrico</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="id_tipocoche">ID Tipo de Coche:</label></th>
+						<td>
+							<select id="id_tipocoche" name="id_tipocoche">
+								<option value="1">Sedán</option>
+								<option value="2">Hatchback</option>
+								<option value="3">SUV</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="id_estado">ID Estado:</label></th>
+						<td>
+							<select id="id_estado" name="id_estado">
+								<option value="1">Nuevo</option>
+								<option value="2">Usado</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="id_marca">ID Marca:</label></th>
+						<td>
+							<select id="id_marca" name="id_marca">
+								<option value="1">Ford</option>
+								<option value="2">Chevrolet</option>
+								<option value="3">Toyota</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="id_usr">ID Usuario:</label></th>
+						<td><input type="text" id="id_usr" name="id_usr"></td>
+					</tr>
+					<tr>
+						<th><label for="modelo">Modelo:</label></th>
+						<td><input type="text" id="modelo" name="modelo"></td>
+					</tr>
+					<tr>
+						<th><label for="ano">Año:</label></th>
+						<td><input type="text" id="ano" name="ano"></td>
+					</tr>
+					<tr>
+						<th><label for="detalle">Detalle:</label></th>
+						<td><textarea id="detalle" name="detalle"></textarea></td>
+					</tr>
+					<tr>
+						<th><label for="caja">Caja:</label></th>
+						<td><input type="text" id="caja" name="caja"></td>
+					</tr>
+					<tr>
+						<th><label for="motor">Motor:</label></th>
+						<td><input type="text" id="motor" name="motor"></td>
+					</tr>
+					<tr>
+						<th><label for="fechapub">Fecha de Publicación:</label></th>
+						<td><input type="text" id="fechapub" name="fechapub"></td>
+					</tr>
+					<tr>
+						<th><label for="precio">Precio:</label></th>
+						<td><input type="text" id="precio" name="precio"><br></td>
+					</tr>
+					<tr>
+						<th><label for="moneda">Moneda:</label></th>
+						<td><input type="text" id="moneda" name="moneda"><br></td>
+					</tr>
+					<tr>
+						<th><label for="cc_pic01">Foto 1:</label></th>
+						<td><input type="file" id="cc_pic01" name="cc_pic01"></td>
+					  </tr>
+					<tr>
+						<th><label for="cc_pic02">Foto 2:</label></th>
+						<td><input type="file" id="cc_pic02" name="cc_pic02"></td>
+					  </tr>
+					  <tr>
+						<th><label for="cc_pic03">Foto 3:</label></th>
+						<td><input type="file" id="cc_pic03" name="cc_pic03"></td>
+					  </tr>
+					<tr>
+						<th><label for="cc_destac">CC Destac:</label></th>
+						<td><input type="text" name="cc_destac" id="cc_destac" maxlength="2" required></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;">
+						<button class="btn-registro">Registrarse</button>
+					</td>
+				</tr>
+				</table>
+			</form>
+		</section>
+	</main>
+</body>
+</html>

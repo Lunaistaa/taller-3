@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registro de Autos</title>
+	<!-- Agregar la siguiente línea para incluir Foundation -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+</head>
+<body>
+	<main class="container">
+		<section>
+			<form id="registroAutos">
+				<div class="row align-center">
+					<div class="column medium-8">
+						<div class="card">
+							<div class="card-section">
+								<table>
+									<tr>
+										<th colspan="2"><h1 class="text-center">Registro de Autos</h1></th>
+									</tr>
+									<tr>
+										<th>ID Coche:</th>
+										<td><input type="text" id="id_coche" name="id_coche" class="form-control"></td>
+									</tr>
+									<tr>
+										<th>ID Movido a:</th>
+										<td>
+											<select id="id_movidoa" name="id_movidoa" class="form-control">
+												<option value="1">Gasolina</option>
+												<option value="2">Diésel</option>
+												<option value="3">Eléctrico</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>ID Tipo de Coche:</th>
+										<td>
+											<select id="id_tipocoche" name="id_tipocoche" class="form-control">
+												<option value="1">Sedán</option>
+												<option value="2">Hatchback</option>
+												<option value="3">SUV</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>ID Estado:</th>
+										<td>
+											<select id="id_estado" name="id_estado" class="form-control">
+												<option value="1">Nuevo</option>
+												<option value="2">Usado</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>ID Marca:</th>
+										<td>
+											<select id="id_marca" name="id_marca" class="form-control">
+												<option value="1">Ford</option>
+												<option value="2">Chevrolet</option>
+												<option value="3">Toyota</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th>ID Usuario:</th>
+										<td><input type="text" id="id_usr" name="id_usr" class="form-control"></td>
+									</tr>
+									<tr>
+										<th>Modelo:</th>
+										<td><input type="text" id="modelo" name="modelo" class="form-control" required></td>
+									</tr>
+									<tr>
+										<th>Año:</th>
+										<td><input type="text" id="anio" name="anio" class="form-control" required></td>
+									</tr>
+									<tr>
+										<th>Detalle:</th>
+										<td><input type="text" id="detalle" name="detalle" class="form-control" required></td>
+									</tr>
+									<tr>
+										<th>Caja:</th>
+										<td><input type="text" id="caja" name="caja" class="form-control" required></td>
+									  </tr>
+									  <tr>
+										<th>Motor:</th>
+										<td><input type="text" id="caja" name="caja" class="form-control" required></td>
+									  </tr>
+									  <tr>
+										<th>Fecha de publicacion:</th>
+										<td><input type="text" id="caja" name="caja" class="form-control" required></td>
+									  </tr>
+									  <tr>
+										<th>Precio:</th>
+										<td><input type="text" id="precio" name="precio" class="form-control" required></td>
+									  </tr>
+									  <tr>
+										<th>Moneda:</th>
+										<td><input type="text" id="caja" name="caja" class="form-control" required></td>
+									  </tr>
+									  <tr>
+										<th>Foto 1:</th>
+										<td><input type="file" id="foto" name="foto" accept="image/*" class="form-control-file"></td>
+									</tr>
+									<tr>
+										<th>Foto 2:</th>
+										<td><input type="file" id="foto" name="foto" accept="image/*" class="form-control-file"></td>
+									</tr>
+									<tr>
+										<th>Foto 3:</th>
+										<td><input type="file" id="foto" name="foto" accept="image/*" class="form-control-file"></td>
+									</tr>
+									<tr>
+										<th>CC Destac:</th>
+										<td><input type="text" id="caja" name="caja" class="form-control" required></td>
+									  </tr>
+									</table>
+									<div class="text-center">
+										<button class="button" id="guardar">Guardar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</body>
+		</html>

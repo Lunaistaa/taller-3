@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+	<meta charset="UTF-8">
+	<title>Registro de usuarios</title>
+	<link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+	<form>
+		<table style="border: 1px solid black;">
+			<tr>
+				<td colspan="2" style="text-align:left;border-bottom:1px solid black;">
+				  <div style="display: flex; justify-content: space-between;">
+					<legend>Formulario de registro</legend>
+					<span>▼</span>
+				  </div>
+				</td>
+			  </tr>
+			  
+			<tr>
+				<td>
+					<label for="id_usr">
+						<span>&#x1F511;</span> ID usuario:
+					</label>
+				</td>
+				<td>
+					<input type="number" id="id_usr" name="id_usr" required min="0" max="99999999999">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="id_pais"><span style="color: red">&#9670;</span> País:</label></td>
+				<td>
+				  <select id="id_pais" name="id_pais" required>
+					<option value="" disabled selected>Seleccione un país</option>
+					<option value="1">Argentina</option>
+					<option value="2">Brasil</option>
+					<option value="3">Chile</option>
+					<option value="4">Colombia</option>
+					<option value="5">Ecuador</option>
+					<option value="6">México</option>
+					<option value="7">Perú</option>
+					<option value="8">Uruguay</option>
+					<option value="9">Venezuela</option>
+				  </select>
+				</td>
+			</tr>  	  
+			<tr>
+				<td><label for="nombre"><span style="color: rgb(0, 251, 255)">&#9670;</span> Nombre:</label></td>
+				<td><input type="text" id="nombre" name="nombre" required maxlength="25"></td>
+			</tr>
+			<tr>
+				<td><label for="apellido"><span style="color: rgb(0, 251, 255)">&#9670;</span> Apellido:</label></td>
+				<td><input type="text" id="apellido" name="apellido" required maxlength="25"></td>
+			</tr>
+			<tr>
+				<td><label for="direccion"><span style="color: rgb(0, 251, 255)">&#9670;</span> Dirección:</label></td>
+				<td><input type="text" id="direccion" name="direccion" required maxlength="25"></td>
+			</tr>
+			<tr>
+				<td><label for="username"><span style="color: rgb(0, 251, 255)">&#9670;</span> Nombre de usuario:</label></td>
+				<td><input type="text" id="username" name="username" required maxlength="25"></td>
+			</tr>
+			<tr>
+				<td><label for="contrasena"><span style="color: rgb(0, 251, 255)">&#9670;</span> Contraseña:</label></td>
+				<td><input type="password" id="contrasena" name="contrasena" required maxlength="25"></td>
+			</tr>
+			<tr>
+				<td><label for="correo"><span style="color: rgb(0, 251, 255)">&#9670;</span> Correo electrónico:</label></td>
+				<td><input type="email" id="correo" name="correo" required maxlength="50"></td>
+			</tr>
+			<tr>
+				<td><label for="telefono"><span style="color: rgb(0, 251, 255)">&#9670;</span> Teléfono:</label></td>
+				<td><input type="tel" id="telefono" name="telefono" required maxlength="20"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<button class="register-btn">Registro</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <style>
+      table {
+        margin: 20px;
+        border: 1px solid black;
+      }
+      td, th {
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="columns medium-4 small-2 small-centered">
+        <table>
+          <tr>
+            <th colspan="2">Formulario de registro</th>
+          </tr>
+          <tr>
+            <td>ID de usuario:</td>
+            <td><input type="text" id="id_usr" name="id_usr" placeholder="Ingrese el ID de usuario" required></td>
+          </tr>
+          <tr>
+            <td>ID de país:</td>
+            <td>
+              <select id="id_pais" name="id_pais" required>
+                <option value="" disabled selected>Seleccione un país</option>
+                <option value="AR">Argentina</option>
+                <option value="BR">Brasil</option>
+                <option value="CO">Colombia</option>
+                <option value="MX">México</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Nombre:</td>
+            <td><input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required></td>
+          </tr>
+          <tr>
+            <td>Apellido:</td>
+            <td><input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required></td>
+          </tr>
+          <tr>
+            <td>Dirección:</td>
+            <td><input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required></td>
+          </tr>
+          <tr>
+            <td>Nombre de usuario:</td>
+            <td><input type="text" id="ccusuario" name="ccusuario" placeholder="Ingrese el nombre de usuario para la cuenta" required></td>
+          </tr>
+          <tr>
+            <td>Contraseña:</td>
+            <td><input type="password" id="ccpaswd" name="ccpaswd" placeholder="Ingrese la contraseña para la cuenta" required></td>
+          </tr>
+          <tr>
+            <td>Correo electrónico:</td>
+            <td><input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required></td>
+          </tr>
+          <tr>
+            <td>Teléfono:</td>
+            <td><input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Registrarse" class="button"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

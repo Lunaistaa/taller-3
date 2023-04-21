@@ -1,0 +1,76 @@
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+  }
+  select {
+    width: 103%;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white; 
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .register-btn {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+  
+  .register-btn:hover {
+    background-color: #3e8e41;
+  }
